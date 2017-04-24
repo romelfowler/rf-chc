@@ -1,0 +1,27 @@
+#sidebar {
+  background: #ffffff;
+  height: 100%;
+  padding: 10px 10px 20px;
+  z-index: 1;
+  border: 2px solid rgba(0,0,0, .1999999);
+  box-shadow: 3px 2px 20px rgba(0, 0, 0, .19);
+}
+#sidebar h3 {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+#sidebar h3 {
+    border-bottom: 5px solid rgba(38, 112, 124, 0.62);
+    padding: 10px 0;
+}
+#sidebar li {
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+ul li {
+  cursor: pointer;
+}
+
+ul li:hover {
+  color: black;
+}

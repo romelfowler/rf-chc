@@ -1,0 +1,278 @@
+* {
+  text-rendering: auto;
+  text-rendering: optimizeSpeed;
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision; }
+
+html, body {
+  width: 100%; }
+
+span {
+  font-size: 12px; }
+
+h1, h2, h3, h4, h5, p, span {
+  line-height: 1.3em;
+  margin-top: 0; }
+
+p {
+  font-size: 15px; }
+
+a {
+  color: whitesmoke; }
+
+a:hover, a:focus {
+  color: #d3d3d3;
+  text-decoration: none; }
+
+.navbar {
+  height: 80px;
+  border-radius: 0;
+  border-bottom: 5px solid #0096a9;
+  margin: 0; }
+
+.inner-nav {
+  position: relative;
+  top: 10px; }
+
+.navbar-brand img {
+  width: 100px; }
+
+/* SEARCH
+ -------------------------------------------------- */
+#search {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translate(0px, -100%) scale(0, 0);
+  -moz-transform: translate(0px, -100%) scale(0, 0);
+  -o-transform: translate(0px, -100%) scale(0, 0);
+  -ms-transform: translate(0px, -100%) scale(0, 0);
+  transform: translate(0px, -100%) scale(0, 0);
+  opacity: 0; }
+
+#search.open {
+  -webkit-transform: translate(0px, 0px) scale(1, 1);
+  -moz-transform: translate(0px, 0px) scale(1, 1);
+  -o-transform: translate(0px, 0px) scale(1, 1);
+  -ms-transform: translate(0px, 0px) scale(1, 1);
+  transform: translate(0px, 0px) scale(1, 1);
+  opacity: 1; }
+
+#search input[type="search"] {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  border: 0px;
+  margin: 0px auto;
+  margin-top: -51px;
+  padding-left: 30px;
+  padding-right: 30px;
+  outline: none; }
+
+#search .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 61px;
+  margin-left: -45px; }
+
+#search .close {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  opacity: 1;
+  padding: 10px 17px;
+  font-size: 27px; }
+
+/* CUSTOMIZE THE NAVBAR
+ -------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-top: 20px;
+  margin-bottom: -90px;
+  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */ }
+
+/* Remove border and change up box shadow for more contrast */
+.navbar .navbar-inner {
+  border: 0;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); }
+
+/* Downsize the brand/project name a bit */
+.navbar .brand {
+  padding: 14px 20px 16px;
+  /* Increase vertical padding to match navbar links */
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5); }
+
+/* Navbar links: increase padding for taller navbar */
+.navbar .nav > li > a {
+  padding: 15px 20px; }
+
+/* Offset the responsive button for proper vertical alignment */
+.navbar .btn-navbar {
+  margin-top: 10px; }
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px; }
+
+.carousel .container {
+  position: relative;
+  z-index: 9; }
+
+.carousel-control {
+  height: 80px;
+  margin-top: 0;
+  font-size: 120px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  background-color: transparent;
+  border: 0;
+  z-index: 10; }
+
+.carousel .item {
+  height: 500px; }
+
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.68);
+  position: static;
+  max-width: 550px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(113, 113, 113, 0.36);
+  padding: 30px;
+  margin-top: 200px; }
+
+.carousel-caption h1,
+.carousel-caption .lead {
+  margin: 0;
+  line-height: 1.25;
+  color: whitesmoke;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
+
+.carousel-caption .btn {
+  margin-top: 10px; }
+
+.carousel-control.left,
+.carousel-control.right {
+  height: 100%; }
+
+section#aboutus_mv, section.mv, section.mv_1, section.mv_2, section.mv_3 {
+  height: 100%;
+  position: relative; }
+
+.mv {
+  padding-bottom: 50px;
+  background: white; }
+
+.mv_1 {
+  background: #424141;
+  color: whitesmoke;
+  padding: 50px 0; }
+
+.mv_2 {
+  background: #0096a9;
+  color: whitesmoke;
+  padding: 50px 0; }
+
+.mv_3 {
+  background: #fdbf50;
+  padding: 50px 0; }
+
+#icims_header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: whitesmoke; }
+
+.icims_tablerow {
+  margin: 20px auto; }
+
+.icyms {
+  width: 45%;
+  height: 100vh;
+  color: whitesmoke;
+  padding: 50px;
+  top: 0;
+  position: absolute;
+  background: rgba(15, 19, 24, 0.72); }
+  .icyms p {
+    text-transform: uppercase;
+    font-size: 15px; }
+
+select, input {
+  color: #333; }
+
+input#jsb_form_submit_i {
+  padding: 10px;
+  background: whitesmoke; }
+
+select#jsb_f_location_s,
+select#jsb_f_position_s,
+input[type="text"] {
+  width: 100%;
+  height: 30px;
+  color: #333; }
+
+.iCIMS_Zip_Container {
+  margin: 20px auto; }
+
+/* CUSTOMIZE THE NEWS SECTION
+-------------------------------------------------- */
+#news {
+  height: 100%;
+  width: 100%;
+  padding: 50px 0 20px;
+  background: whitesmoke; }
+
+.news_images {
+  margin-bottom: 60px; }
+
+/* FOOTER
+-------------------------------------------------- */
+#footer {
+  display: table;
+  color: whitesmoke;
+  height: 68px;
+  display: block;
+  background: #333; }
+  #footer span {
+    color: whitesmoke; }
+  #footer .address, #footer .social {
+    display: table-cell;
+    position: relative;
+    top: 20px;
+    left: 20px; }
+
+/*# sourceMappingURL=boots.css.map */
